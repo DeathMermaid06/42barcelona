@@ -18,10 +18,10 @@ void	rush(int x, int y)
 	int	xc;
 	int	yr;
 
-	yr = 1;
+	yr = 0;
 	while (yr <= y && (x > 0 && y > 0))
 	{
-		xc = 1;
+		xc = 0;
 		while (xc <= x)
 		{
 			if ((yr == 1 || yr == y) && (xc == 1 || xc == x))

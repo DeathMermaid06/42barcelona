@@ -1,20 +1,31 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mpistaso <mpistaso@student.42barcel>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/06 17:02:59 by mpistaso          #+#    #+#             */
+/*   Updated: 2023/12/14 15:22:26 by mpistaso         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 char	*ft_strcat(char *dest, char *src)
 {
-int i;
-int j;
+	int	i;
+	int	j;
 
-i=0;
-j=0;
-
-while (dest[i] != '\0')
-{
-	i++;
-}
-while (src[j] != '\0')
-{
-	dest[i + j] = src[j];
-	j++;
-}
-dest[i + j] = '\0';
-return(dest);
+	i = 0;
+	j = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	while (src[j] != '\0')
+	{
+		dest[i + j] = src[j];
+		j++;
+	}
+	dest[i + j] = '\0';
+	return (dest);
 }
